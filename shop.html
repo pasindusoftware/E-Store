@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppy</title>
+    <link rel="stylesheet" href = "style_shop.css">
+    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src = "jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class = "disc">
+        <div class = "dconl">
+            <p>Call US : +123-456-789 </p>
+        </div>
+        <div class = "dconm">
+            <p>Sign Up and get 25% Off Discount</p>
+        </div>
+        <div class = "dconr">
+            <img src = "Res/icon (1).png">
+            <img src = "Res/icon (2).png">
+            <img src = "Res/icon (3).png">
+            <img src = "Res/icon (4).png">
+        </div>
+    </div>
+    <div class = "navbar">
+        <div class = "sec1">
+            <img src = "Res/logo.png">
+            <p>Gocery</p>
+        </div>
+        <div class = "sec2">
+            <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cart</a>
+        <a href="aboutus.html">About US</a>
+        </div>
+    </div>
+    <div class = "contbody">
+        <div class = "loca">
+            <p class = "h">Shop</p>
+            <p class = "u">Home / Shop</p>
+        </div>
+        <div class = "main">
+            <div class = "filter">
+                <p id = "top">Filter Options</p>
+                <p class = "ctn">Category</p>
+                <div class = "cata">
+                    <div><input type="checkbox" id = "fi_f" checked><label>Fruits</label></div>
+                    <div><input type="checkbox" id = "fi_v" checked><label>Vegetables</label></div>
+                    <div><input type="checkbox" id = "fi_b" checked><label>Bakery</label></div>
+                    <div><input type="checkbox" id = "fi_d" checked><label>Drinks</label></div>
+                </div>
+                <button id = "btnfil">Filter</button>
+            </div>
+            <div class = "mainshop">
+                <h1>Showing results</h1>
+                <div class = "container">
+                    <div class="product-card" id = "it1">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/orange.jpg" alt="Fresh Oranges" class="product-image">
+                        
+                        <p class="category">Fruits</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Fresh Oranges</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">500 g</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$11.75</span>
+                            <span class="old-price">$15.00</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart1">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it2">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/apple.png" alt="Fresh Oranges" class="product-image">
+                        
+                        <p class="category">Fruits</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Fresh Apples</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">500 g</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$14.75</span>
+                            <span class="old-price">$25.00</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart2">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it3">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/carrot.png" alt="Fresh Carrots" class="product-image">
+                        
+                        <p class="category">Vegetables</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Fresh Carrots</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">500 g</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$7.75</span>
+                            <span class="old-price">$12.00</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart3">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it4">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/banana.png" alt="Fresh Bananas" class="product-image">
+                        
+                        <p class="category">Fruits</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Fresh Bananas</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">500 g</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$8.75</span>
+                            <span class="old-price">$11.00</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart4">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it5">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/tomato.png" alt="Fresh Tomato" class="product-image">
+                        
+                        <p class="category">Vegetables</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Fresh Tomato</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">250 g</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$4.75</span>
+                            <span class="old-price">$7.00</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart5">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it6">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/garlic.png" alt="Fresh Garlic" class="product-image">
+                        
+                        <p class="category">Vegetables</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Fresh Garlic</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">100 g</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$1.75</span>
+                            <span class="old-price">$5.00</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart6">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it7">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/bred.png" alt="White Bread" class="product-image">
+                        
+                        <p class="category">Bakery</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">White Bread</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">450 g</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$3.75</span>
+                            <span class="old-price">$4.00</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart7">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it8">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/cake.png" alt="Chocolate Cake" class="product-image">
+                        
+                        <p class="category">Bakery</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Chocolate Cake</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">1 Kg</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$20.75</span>
+                            <span class="old-price">$22.00</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart8">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it9">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/straw.jpg" alt="Fresh Straw Berry" class="product-image">
+                        
+                        <p class="category">Fruits</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Fresh StrawBerry</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">250 g</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$21.75</span>
+                            <span class="old-price">$25.00</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart9">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it10">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/milksh.png" alt=" milksh" class="product-image">
+                        
+                        <p class="category">Drinks</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Chocolate Milk Shake </h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">300 ml</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$8.75</span>
+                            <span class="old-price">$10.00</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart10">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it11">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/drink.png" alt=" drink" class="product-image">
+                        
+                        <p class="category">Drinks</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Orange Drink</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">175 ml</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$3</span>
+                            <span class="old-price">$3.75</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart11">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it12">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/pumpkin.png" alt=" pumpkin" class="product-image">
+                        
+                        <p class="category">Vegetables</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Fresh Pumpkin</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">500 g</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$5.50</span>
+                            <span class="old-price">$8.75</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart12">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it13">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/avacado.png" alt="avacado" class="product-image">
+                        
+                        <p class="category">Fruits</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Fresh Avacado</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">500 g</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$6.50</span>
+                            <span class="old-price">$9.75</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart13">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                    <div class="product-card" id = "it14">
+                        <div class="discount-badge">25% off</div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <img src="Res/muffin.png" alt="muffin" class="product-image">
+                        
+                        <p class="category">Backery</p>
+                        
+                        <div class="product-info">
+                            <h2 class="product-title">Muffin</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        
+                        <p class="weight">1 Ps</p>
+                        
+                        <div class="pricing">
+                            <span class="new-price">$1.00</span>
+                            <span class="old-price">$1.25</span>
+                        </div>
+                
+                        <button class="add-to-cart" id = "cart14">
+                            <i class="fa-solid fa-bag-shopping"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h2 class="logo"><span>🛒</span> Grocery.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna.</p>
+            <div class="social-icons">
+              <a href="#"><img src="Res/square-instagram-brands.svg" alt="Twitter"></a>
+              <a href="#"><img src="Res/square-instagram-brands.svg" alt="Facebook"></a>
+              <a href="#"><img src="Res/square-instagram-brands.svg" alt="Pinterest"></a>
+              <a href="#"><img src="Res/square-instagram-brands.svg" alt="Instagram"></a>
+              <a href="#"><img src="Res/square-instagram-brands.svg" alt="YouTube"></a>
+            </div>
+          </div>
+    
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-section">
+            <h3>Customer Services</h3>
+            <ul>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Track Your Order</a></li>
+              <li><a href="#">Return</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-section">
+            <h3>Our Information</h3>
+            <ul>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">User Terms & Condition</a></li>
+              <li><a href="#">Return Policy</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-section contact">
+            <h3>Contact Info</h3>
+            <p>📞 +0123-456-789</p>
+            <p>📧 example@gmail.com</p>
+            <p>📍 8502 Preston Rd. Inglewood, &nbsp;&nbsp; Maine 98380</p>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <p>Copyright © 2025 <span class="footer-highlight">NextGen Devs</span>. All Rights Reserved.</p>
+          <div class="footer-options">
+            <select>
+              <option>English</option>
+              <option>French</option>
+              <option>Spanish</option>
+            </select>
+            <select>
+              <option>USD</option>
+              <option>EUR</option>
+              <option>GBP</option>
+            </select>
+          </div>
+        </div>
+      </footer>
+    <script src = "script.js"></script>
+</body>
+</html>

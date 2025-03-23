@@ -1,0 +1,66 @@
+.contbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.success-container {
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+    width: 100%;
+    left:-10%;
+    margin-top: 10%;
+}
+
+.checkmark {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    animation: popIn 0.5s ease-out;
+}
+
+.checkmark::after {
+    content: '✔';
+    font-size: 40px;
+    color: white;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.success-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.confetti {
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    background: red;
+    opacity: 0.8;
+    animation: fall 1.5s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100vh) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
